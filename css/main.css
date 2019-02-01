@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/*CSS Doc*/
+body
+{
+	background: #464646;
+}
+h1,h2,p,a
+{
+	color: #f5f5f5;
+	font-family: "Helvetica Neue"
+}
+p
+{
+	font-size: 20px;
+}
+#siteContainer
+{
+
+	width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.hidden
+{
+	display: none;
+}
+#NavBackground
+{
+	background: black;
+	opacity: 0.5;
+	position: absolute;
+	width: 1024px;
+
+
+}
+#mainNav
+{
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 1024px;
+	align-items: center;
+	height: 80px;
+	background: rgba(0,0,0,.5);
+}
+
+#rightNav
+{
+	width: 900px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+#rightNav li
+{
+	margin: 0px;
+	display: inline;
+	padding: 30px;
+	
+
+}
+#leftNav
+{
+	width: 70px;
+	margin-left:20px;
+}
+#logo
+{
+	position: absolute;
+	width: 30%;
+	margin-top: 120px;
+	padding: 0 20px;
+}
+
+#mainHeader
+{
+	display: flex;
+	justify-content: center;
+	height: 457px;
+	background: url(../images/header_background.jpg);
+	box-shadow: 0px 10px 50px black;
+	position: relative;
+}
+a:active,a:link, a:visited 
+{
+	color: #f5f5f5;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover
+{
+	color: #62e1c1;
+}
+
+#mainContainer
+{
+
+}
+
+#Welcome
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 557px;
+	background-image: linear-gradient(#6fcdff, #76fec5);
+	box-shadow: 0px 10px 50px black;
+}
+
+h1
+{
+	font-size: 60px;
+	margin: 0;
+	font-weight: bold;
+
+}
+
+#promoImage
+{
+	padding: 0px;
+	margin:0;
+	position: relative;
+	height: 607px;
+
+}
+
+#Welcome p
+{
+	font-size: 30px;
+}
+
+#TRAAMeeting
+{
+	box-shadow:0 -10px 20px black;
+	position: relative;
+	padding: 80px;
+	background: #6fcdff;
+}
+
+#TRAAMeeting h2
+{
+	margin: 0px;
+	font-size: 60px;
+	text-align: center;
+	color: #f5f5f5;
+}
+
+#meetingTime
+{
+	text-align: center;
+	font-size: 30px;
+	font-weight: lighter;
+	color: #f5f5f5;
+}
+
+#meetingBullet
+{
+	text-align: center;
+	font-size: 30px;
+	color: #f5f5f5;
+}
+
+#meetingLocation
+{
+	text-align: right;
+	font-size: 20px;
+	color: #f5f5f5;
+	font-weight: lighter;
+}
+
+#aboutTRAA h2
+{
+	font-size: 60px;
+	text-align: center;
+	color: #62e1c1;
+	margin: 0;
+	padding-top: 100px;
+}
+
+#aboutTRAA
+{
+	background: #f5f5f5;
+}
+#gridTRAA
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.descriptions img
+{
+	width: 150px;
+}
+
+.descriptions p
+{
+	width: 200px;
+	color: #62e1c1;
+
+}
+.descriptions
+{
+	margin: 50px;
+	width: 400px;
+	height: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#events
+{
+	background: #6fcdff;
+	height: 506px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+#eventsText
+{
+
+		position: relative;
+		text-align: right;
+		margin-right: 100px;
+}
+#eventsImage
+{
+
+	position: absolute;
+	width: 693px;
+	height: 506px;
+	background: url(../images/events.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+#projects
+{
+	background: #62e1c1;
+	height: 506px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+
+}
+#projectsText
+{
+	color: white;
+		position: relative;
+		margin-right: 800px;
+}
+#projectsImage
+{
+	position: absolute;
+	width: 690px;
+	height: 506px;
+	background: url(../images/projects.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
