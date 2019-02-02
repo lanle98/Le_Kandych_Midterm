@@ -4,15 +4,17 @@ body
 {
 	background: #464646;
 }
-h1,h2,p,a
+h1,h2,h3,p,a
 {
 	color: #f5f5f5;
 	font-family: "Helvetica Neue"
 }
-p
+
+h3
 {
-	font-size: 20px;
+	font-size: 60px;
 }
+
 #siteContainer
 {
 
@@ -104,10 +106,9 @@ a:hover
 	align-items: center;
 	height: 557px;
 	background-image: linear-gradient(#6fcdff, #76fec5);
-	box-shadow: 0px 10px 50px black;
 }
 
-h1
+#Welcome h3
 {
 	font-size: 60px;
 	margin: 0;
@@ -131,13 +132,13 @@ h1
 
 #TRAAMeeting
 {
-	box-shadow:0 -10px 20px black;
+	box-shadow:0 -10px 10px black;
 	position: relative;
 	padding: 80px;
 	background: #6fcdff;
 }
 
-#TRAAMeeting h2
+#TRAAMeeting h3
 {
 	margin: 0px;
 	font-size: 60px;
@@ -168,7 +169,7 @@ h1
 	font-weight: lighter;
 }
 
-#aboutTRAA h2
+#aboutTRAA h3
 {
 	font-size: 60px;
 	text-align: center;
@@ -336,15 +337,16 @@ h1
 	padding: 20px;
 }
 
-#copyRight p:nth-child(1)
+
+#copyRight p:nth-child(3)
 {
-	font-size: 15px;
+	font-size: 10px;
 	text-align: right;
 }
 
 #copyRight p:nth-child(2)
 {
-	font-size: 10px;
+	font-size: 15px;
 	text-align: right;
 }
 
@@ -354,3 +356,166 @@ h1
 
 
 /*About Page*/
+
+
+
+
+
+#mainHeader_About
+{
+	display: flex;
+	justify-content: center;
+	height: 457px;
+	background: url(../images/about/about_header.jpg);
+	box-shadow: 0px 10px 50px black;
+	position: relative;
+}
+
+
+
+#promoText_About
+{
+	position: absolute;
+	margin-top: 120px;
+	padding: 0 20px;
+	font-size: 60px;
+}
+
+
+#promoText_About h3
+{
+	font-weight: lighter;
+	color: #f5f5f5;
+	text-shadow: 0 10px 10px black;
+}
+
+#ourStory
+{
+	background: #62e1c1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 60px;
+}
+
+#ourStory h3
+{
+	text-align: right;
+	font-size: 60px;
+	margin: 40px 0;
+}
+
+
+
+#ourStory p
+{
+	line-height: 40px;
+	text-align: justify;
+	font-size: 24px;
+}
+
+#ourStory br
+{
+	line-height: 70px;
+}
+
+#membership
+{
+	display: grid;
+	background: #f5f5f5;
+	grid-template-columns: 1fr 0.5fr;
+	grid-template-rows: 1fr;
+	height: 435px;
+}
+
+#membershipText
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 40px;
+}
+
+#membershipText h3
+{
+	font-size: 45px;
+	color: #6fcdff;
+	text-align: center;
+	margin: 10px;
+}
+
+#membershipText span
+{
+	font-size: 24px;
+}
+
+#membershipText p
+{
+	color: #464646;
+	font-size: 20px;
+	text-align: center;
+}
+
+#executives
+{
+
+	background: #62e1c1;
+	padding:  100px 40px;
+}
+
+#executives h3
+{
+	text-align: center;
+	margin-top: 0;
+	margin-top: 0px;
+}
+
+
+.namesTop
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.namesBottom
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.Names p
+{
+	text-align: center;
+	font-size: 24px;
+
+}
+
+
+
+.Names span
+{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+#volunteer
+{
+
+	background: #f5f5f5;
+	padding: 100px 50px;
+}
+
+#volunteer p
+{
+	color:#6fcdff;
+}
+
+#volunteer h3
+{
+	font-size: 50px;
+	color:#6fcdff;
+	text-align: center;
+	margin-top: 0px;
+}
