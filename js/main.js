@@ -1,7 +1,7 @@
 (()=>{
 
 
-	let projects = document.querySelectorAll(".projects");
+	let projects = document.querySelectorAll(".promoText_Projects");
 	let articles = document.querySelectorAll(".articles");
 	console.log(articles);
 	console.log(projects);
@@ -32,7 +32,16 @@ projects[3].addEventListener("click", function()
 
 	// projects.forEach(show => show.addEventListener("click",showArticles));
 
+	var parallax = document.querySelector(".parallax");
 
+	window.addEventListener("scroll", function ()
+	{
+
+		let offset = window.pageYOffset;
+		console.log("Offset: " + offset);
+		console.log(parallax);
+		parallax.style.backgroundPositionY = offset * 0.1 +"px";
+	});
 
 
 	})();
