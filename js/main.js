@@ -9,39 +9,36 @@
 projects[0].addEventListener("click", function()
 	{
 		articles[0].classList.toggle("deleteArticles");
+		articles[0].scrollIntoView();
 	});
 
 
 projects[1].addEventListener("click", function()
 	{
-		articles[1].classList.toggle("deleteArticles").style.transitionDuration = "1s";
+		articles[1].classList.toggle("deleteArticles");
+		articles[1].scrollIntoView(true);
 	});
 
 
 projects[2].addEventListener("click", function()
 	{
 		articles[2].classList.toggle("deleteArticles");
+		articles[2].scrollIntoView();
 	});
 
 
 projects[3].addEventListener("click", function()
 	{
 		articles[3].classList.toggle("deleteArticles");
+		articles[3].scrollIntoView();
 	});
 
 
 	// projects.forEach(show => show.addEventListener("click",showArticles));
 
-	var parallax = document.querySelector(".parallax");
-
-	window.addEventListener("scroll", function ()
-	{
-
-		let offset = window.pageYOffset;
-		console.log("Offset: " + offset);
-		console.log(parallax);
-		parallax.style.backgroundPositionY = offset * 0.1 +"px";
-	});
+// 	var elmnt = document.getElementsByClassName("articles");
+// elmnt.scrollIntoView();
+// 	});
 
 
 	})();
