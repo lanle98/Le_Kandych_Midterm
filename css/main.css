@@ -251,7 +251,7 @@ a:hover
 
 .newsletterHeader
 {
-	background-image: url(../images/events_hero_img.jpg) no-repeat;
+	background-image: url(../images/newsletters_links_hero_img.jpg);
 }
 
 
@@ -314,10 +314,26 @@ a:hover
 
 }
 
+.lightskyblue, .lightgreen, h3:hover
+{
+	text-shadow: 0 10px 10px rgba(0,0,0,.5);
+
+}
+
+.lightskyblue, .lightgreen, h3:active
+{
+	position: relative;
+	top: 3px;
+}
+
+
 .lightskyblue 
 {
 	background-color: #00bcff;
 	height: 357px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -325,8 +341,8 @@ a:hover
 {
 	font-size:50px;
 	/*margin-top:100px;*/
-	display: flex;
-	justify-content: center;
+	margin:0;
+
 }
 
 
@@ -335,9 +351,36 @@ a:hover
 {
 	background-color: #91ead3;
 	height: 357px;
-	margin-top: auto;
+	/*margin-top: auto;*/
 	font-size:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 }
+
+.lightgreen h3
+{
+	font-size:50px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin:0;
+}
+
+
+
+/*Contact Page*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -391,6 +434,7 @@ a:hover
 	font-size: 15px;
 	text-align: right;
 }
+
 
 
 
