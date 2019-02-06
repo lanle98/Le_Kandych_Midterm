@@ -1,5 +1,24 @@
 @charset "UTF-8";
-/*CSS Doc*/
+
+/*CSS Document*/
+
+.hidden
+{
+	display: none;
+}
+h1,h2,h3,p,a
+{
+	color: #f5f5f5;
+	font-family: "Helvetica Neue"
+}
+
+h3
+{
+	font-size: 60px;
+	letter-spacing: 1px;
+}
+
+
 body
 {
 	background: white;
@@ -16,6 +35,10 @@ a:hover
 	color: #62e1c1;
 }
 
+
+
+#siteContainer 
+
 h3
 {
 	font-size: 60px;
@@ -23,6 +46,7 @@ h3
 }
 
 #siteContainer
+
 {
 
 	width: 1024px;
@@ -32,10 +56,24 @@ h3
 	justify-content: flex-start;
 	background: #f5f5f5;
 }
+
+#mainContainer
+{
+	width: 1024px;
+	 margin: 0 auto;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: #f5f5f5;*/
+
+}
+
+
 .hidden
 {
 	display: none;
 }
+
 
 
 .mainHeader
@@ -142,57 +180,217 @@ h3
 	padding: 0 20px;
 }
 
+.eventsHeader
 
-#mainFooter
 {
-	background-image: url(../images/footer.jpg);
-	height: 236px;
-	display: grid;
-	grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
-	grid-template-rows: 0.5fr 0.5fr 0.5fr;
+
+	background: url(../images/events_hero_img.jpg) no-repeat; 
+	
 }
 
-#subNav li
+
+
+#titleText 
 {
-	margin: 0px;
-	display: inline;
-	padding: 20px;
-	padding-left: 35px;
+	position: absolute;
+	margin-top: 140px;
+	padding: 0 20px;
+	font-size: 60px;
 }
-#subLogo
+
+
+#titleText h2
 {
-	grid-row-start: 2;
-	grid-row-end: 4;
-	padding-left: 20px;
+	font-weight: lighter;
+	color: #f5f5f5;
+	text-shadow: 0 10px 10px black;
 }
-#subNav
+
+/*Past Events Page*/
+
+#eventsPara1 p
 {
-	grid-column-start: 2;
-	grid-column-end: 5;
+	color: black;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 108px;
+	margin-bottom:93px;
+}
+
+#photoEvents
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr; 
+   grid-gap: 5px;
+   background-color: #fff;
+   
+  
+} 
+
+
+
+#photoEvents img
+{
+
+	filter: brightness(0.65);
+}
+
+#photoEvents img:hover
+
+{
+	filter: brightness(1);
+}
+
+
+#eventsPara2
+{
+	margin-top:50px;
+	margin-bottom:78px;
+}
+
+#eventsPara2 h2
+{
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+}
+#eventsPara2 p
+{
+	color: #333333;
+	font-weight: normal;
+	text-align: center;
+	font-size: 27px;
+}
+
+
+/*Newsletter page*/
+
+.newsletterHeader
+{
+	background-image: url(../images/newsletters_links_hero_img.jpg);
+}
+
+
+.traaNewsletter h2
+{
+	color: #343434;
+	font-size: 58px;
+	margin-top: 100px;
+	margin-bottom: 50px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 
 }
 
-#copyRight
+.traaNewsletter p
 {
-	grid-row-start: 2;
-	grid-column-start: 4;
-	padding: 20px;
+	color: #333333;
+	text-align: center;
+	font-size: 20px;
+	margin-left:163px;
+	margin-right: 163px;
+	line-height: 1.6;
+	margin-bottom:100px;
 }
 
-
-#copyRight p:nth-child(3)
+#subTittle 
 {
-	font-size: 10px;
-	text-align: right;
+	font-weight: bold;
+	font-size:26px;
+	line-height: 1.7;
+	text-align: center;
 }
 
-#copyRight p:nth-child(2)
+.memoryLane h2
 {
-	font-size: 15px;
-	text-align: right;
+	font-weight:bold;
+	font-size:26px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color:#343434;
 }
+
+.memoryLane img
+{
+	height: 939px;
+	width: 808px;
+	margin-left: 116px;
+	margin-top: 25px;
+	padding-bottom: 40px;
+	border-bottom: solid #00bcff;
+}
+
+.trraLinks h2
+{
+	display: flex;
+	justify-content: center;
+	font-size:58px;
+	color: #343434;
+
+}
+
+.lightskyblue, .lightgreen, h3:hover
+{
+	text-shadow: 0 10px 10px rgba(0,0,0,.5);
+
+}
+
+.lightskyblue, .lightgreen, h3:active
+{
+	position: relative;
+	top: 3px;
+}
+
+
+.lightskyblue 
+{
+	background-color: #00bcff;
+	height: 357px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.lightskyblue h3
+{
+	font-size:50px;
+	/*margin-top:100px;*/
+	margin:0;
+
+}
+
+
+.lightgreen 
+
+{
+	background-color: #91ead3;
+	height: 357px;
+	/*margin-top: auto;*/
+	font-size:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.lightgreen h3
+{
+	font-size:50px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin:0;
+}
+
+
+
+/*Contact Page*/
+
 
 
 
@@ -421,6 +619,74 @@ h3
 
 
 
+
+
+
+
+#mainFooter
+{
+	background-image: url(../images/footer-image.jpg);
+	height: 236px;
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+	grid-template-rows: 0.5fr 0.5fr 0.5fr;
+}
+
+#subNav li
+{
+	margin: 0px;
+	display: inline;
+	padding: 20px;
+	padding-left: 35px;
+}
+#subLogo
+{
+	grid-row-start: 2;
+	grid-row-end: 4;
+	padding-left: 20px;
+}
+#subNav
+{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+#copyRight
+{
+	grid-row-start: 2;
+	grid-column-start: 4;
+	padding: 20px;
+}
+
+
+#copyRight p:nth-child(3)
+{
+	font-size: 10px;
+	text-align: right;
+}
+
+#copyRight p:nth-child(2)
+{
+	font-size: 15px;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*About Page*/
 
 
@@ -588,6 +854,15 @@ h3
 
 
 
+
+
+
+
+
+
+
+
+
 /*Projects Page*/
 
 
@@ -706,3 +981,4 @@ h3
 	position: absolute;
 	margin: 0px;
 }
+
