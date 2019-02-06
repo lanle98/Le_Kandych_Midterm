@@ -4,6 +4,11 @@ body
 {
 	background-color: #08AEEA;
 background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
+background-size: 200% 200%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+
 }
 
 a:active,a:link, a:visited 
@@ -21,6 +26,7 @@ a:hover
 
 #siteContainer
 {
+	box-shadow: -1px 6px 32px 1px rgba(0,0,0,0.3);
 
 	width: 1024px;
 	margin: 0 auto;
@@ -124,7 +130,7 @@ a:hover
 
 .effect-3:hover:before,
 .effect-3:hover:after {
-	width: calc(100%);
+	width: 100%;
 	opacity:.5;
 
 }
@@ -279,7 +285,7 @@ svg
 {
 	animation-name:fade;
 	animation-duration: 1s;
-	animation-delay: 1s;
+	animation-delay: .5s;
 /*	animation-iteration-count: infinite;*/
 	transform-origin: center;
 	animation-timing-function:linear;
@@ -291,7 +297,7 @@ svg
 {
 	animation-duration: 2s;
 	animation-name: spin;
-	animation-delay: 1.5s;
+	animation-delay: 1s;
  	animation-timing-function:ease;
 /* 	animation-iteration-count: infinite;*/
 	transform-origin: center;
@@ -315,9 +321,9 @@ svg
 	color: #fff;
 	background: linear-gradient(45deg, rgba(28,216,210,1) 0%, rgba(72,228,189,1) 30%, rgba(36,198,220,1) 60%, rgba(81,74,157,1) 100%);
 	background-size: 200% 200%;
-	-webkit-animation: Gradient 8s ease infinite;
-	-moz-animation: Gradient 8s ease infinite;
-	animation: Gradient 8s ease infinite;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
 }
 
 .Welcome h3
@@ -332,12 +338,27 @@ svg
 {
 	padding: 0px;
 	margin:0;
-	position: relative;
 	height: 607px;
+	position: relative;
+	
+}
+
+#promoImage img
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
 
 }
 
+.insetShadow
+{
+box-shadow: inset 0px 5px 31px 9px rgba(0,0,0,0.8);
+	position: absolute;
+	height: 100%;
+	width: 100%;
 
+}
 
 
 .Welcome p
@@ -352,6 +373,7 @@ svg
 	padding: 80px;
 	background-color: #08AEEA;
 background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
+box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.57);
 }
 
 #TRAAMeeting h3
@@ -408,6 +430,7 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
 .descriptions img
 {
 	width: 150px;
+	transition: .5s;
 }
 
 .descriptions p
@@ -428,12 +451,20 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
 
 }
 
+.descriptions:hover img
+{
+	width: 180px;
+	padding-right: 20px;
+}
+
+
 #events
 {
 	background: linear-gradient(-135deg, rgba(98,225,193,1) 0%, rgba(98,225,213,1) 30%, rgba(98,192,225,1) 60%, rgba(98,158,225,1) 100%);
 	height: 506px;
 	position: relative;
 	border-bottom: 1px solid white;
+	box-shadow: 0px 20px 22px 20px rgba(0,0,0,0.57);
 
 }
 #events h3
@@ -514,6 +545,7 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
 	background: linear-gradient(-45deg, rgba(98,225,193,1) 0%, rgba(98,225,213,1) 30%, rgba(98,192,225,1) 60%, rgba(98,158,225,1) 100%);
 	height: 506px;
 	position: relative;
+	box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.57);
 }
 
 
@@ -540,6 +572,7 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
 		margin-bottom: 0px;
 		transition:ease-in-out .5s all;
 		right: 25px;
+
 }
 
 #projects:hover h3
@@ -713,7 +746,7 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
 #membershipText h3
 {
 	font-size: 45px;
-	color: #08AEEA;
+	color: #48E4BD;
 	text-align: center;
 	margin: 10px;
 }
@@ -737,6 +770,7 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #48E4BD 100%);
 	background-color: #08AEEA;
 background-image: linear-gradient(-45deg, #08AEEA 0%, #48E4BD 100%);
 	padding:  100px 40px;
+	box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.57);
 }
 
 #executives h3
@@ -779,7 +813,6 @@ background-image: linear-gradient(-45deg, #08AEEA 0%, #48E4BD 100%);
 {
 
 	padding: 100px 50px;
-	background: white;
 }
 
 #volunteer p
