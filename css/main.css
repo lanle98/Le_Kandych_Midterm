@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*CSS Document*/
 
 .hidden
@@ -17,6 +18,7 @@ h3
 	letter-spacing: 1px;
 }
 
+
 body
 {
 	background: white;
@@ -34,7 +36,17 @@ a:hover
 }
 
 
+
 #siteContainer 
+
+h3
+{
+	font-size: 60px;
+	letter-spacing: 1px;
+}
+
+#siteContainer
+
 {
 
 	width: 1024px;
@@ -55,6 +67,14 @@ a:hover
 	background: #f5f5f5;*/
 
 }
+
+
+.hidden
+{
+	display: none;
+}
+
+
 
 .mainHeader
 {
@@ -159,7 +179,6 @@ a:hover
 	margin-top: 120px;
 	padding: 0 20px;
 }
-
 
 .eventsHeader
 
@@ -377,6 +396,226 @@ a:hover
 
 
 
+/*Home Page Start Here*/
+
+.homeHeader
+{
+	background: url(../images/header_background.jpg);
+}
+
+
+
+#mainContainer
+{
+	
+}
+
+#Welcome
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 557px;
+	background-image: linear-gradient(#6fcdff, #76fec5);
+}
+
+#Welcome h3
+{
+	font-size: 60px;
+	margin: 0;
+	font-weight: bold;
+
+}
+
+#promoImage
+{
+	padding: 0px;
+	margin:0;
+	position: relative;
+	height: 607px;
+
+}
+
+#Welcome p
+{
+	font-size: 30px;
+}
+
+#TRAAMeeting
+{
+	box-shadow:0 -10px 10px black;
+	position: relative;
+	padding: 80px;
+	background: #6fcdff;
+}
+
+#TRAAMeeting h3
+{
+	margin: 0px;
+	font-size: 60px;
+	text-align: center;
+	color: #f5f5f5;
+}
+
+#meetingTime
+{
+	text-align: center;
+	font-size: 30px;
+	font-weight: lighter;
+	color: #f5f5f5;
+}
+
+#meetingBullet
+{
+	text-align: center;
+	font-size: 30px;
+	color: #f5f5f5;
+}
+
+#meetingLocation
+{
+	text-align: right;
+	font-size: 20px;
+	color: #f5f5f5;
+	font-weight: lighter;
+}
+
+#aboutTRAA h3
+{
+	font-size: 60px;
+	text-align: center;
+	color: #62e1c1;
+	margin: 0;
+	padding-top: 100px;
+}
+
+#aboutTRAA
+{
+	background: #f5f5f5;
+}
+#gridTRAA
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.descriptions img
+{
+	width: 150px;
+}
+
+.descriptions p
+{
+	width: 200px;
+	color: #62e1c1;
+
+}
+.descriptions
+{
+	margin: 50px;
+	width: 400px;
+	height: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#events
+{
+	background: #6fcdff;
+	height: 506px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+#eventsText
+{
+
+		position: relative;
+		text-align: right;
+		margin-right: 100px;
+}
+#eventsImage
+{
+
+	position: absolute;
+	width: 693px;
+	height: 506px;
+	background: url(../images/events.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+#projects
+{
+	background: #62e1c1;
+	height: 506px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+
+}
+#projectsText
+{
+	color: white;
+		position: relative;
+		margin-right: 800px;
+}
+#projectsImage
+{
+	position: absolute;
+	width: 690px;
+	height: 506px;
+	background: url(../images/projects.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#associatesLogo
+{
+	padding: 80px;
+}
+
+#associatesLogo #top
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+
+}
+
+#associatesLogo #bottom
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+
+#associatesLogo a:nth-child(1)
+{
+	width: 15%;
+}
+
+#associatesLogo a
+{
+	width: 25%;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -448,6 +687,167 @@ a:hover
 
 
 
+/*About Page*/
+
+
+
+
+
+.aboutHeader
+{
+	
+	background: url(../images/about/about_header.jpg);
+	
+}
+
+
+
+#titleText
+{
+	position: absolute;
+	margin-top: 140px;
+	padding: 0 20px;
+	font-size: 60px;
+}
+
+
+#titleText h3
+{
+	font-weight: lighter;
+	color: #f5f5f5;
+	text-shadow: 0 10px 10px black;
+}
+
+#ourStory
+{
+	background: #62e1c1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 60px;
+}
+
+#ourStory h3
+{
+	text-align: right;
+	font-size: 60px;
+	margin: 40px 0;
+}
+
+
+
+#ourStory p
+{
+	line-height: 40px;
+	text-align: justify;
+	font-size: 24px;
+}
+
+#ourStory br
+{
+	line-height: 70px;
+}
+
+#membership
+{
+	display: grid;
+	background: #f5f5f5;
+	grid-template-columns: 1fr 0.5fr;
+	grid-template-rows: 1fr;
+	height: 435px;
+}
+
+#membershipText
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 40px;
+}
+
+#membershipText h3
+{
+	font-size: 45px;
+	color: #6fcdff;
+	text-align: center;
+	margin: 10px;
+}
+
+#membershipText span
+{
+	font-size: 24px;
+}
+
+#membershipText p
+{
+	color: #464646;
+	font-size: 20px;
+	text-align: center;
+}
+
+#executives
+{
+
+	background: #62e1c1;
+	padding:  100px 40px;
+}
+
+#executives h3
+{
+	text-align: center;
+	margin-top: 0;
+	margin-top: 0px;
+}
+
+
+.namesTop
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.namesBottom
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.Names p
+{
+	text-align: center;
+	font-size: 24px;
+
+}
+
+
+
+.Names span
+{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+#volunteer
+{
+
+	background: #f5f5f5;
+	padding: 100px 50px;
+}
+
+#volunteer p
+{
+	color:#6fcdff;
+}
+
+#volunteer h3
+{
+	font-size: 50px;
+	color:#6fcdff;
+	text-align: center;
+	margin-top: 0px;
+}
 
 
 
@@ -463,8 +863,122 @@ a:hover
 
 
 
+/*Projects Page*/
 
 
+.projectsHeader
+{
+	/*display: flex;
+	justify-content: center;
+	height: 457px;*/
+	background: url(../images/projects/projects_header.jpg);
+	/*box-shadow: 0px 10px 50px black;
+	position: relative;
+	margin-bottom: 100px;*/
+}
+
+.promoText_Projects
+{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
+.projects
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: none;
+	width: 1024px;
+	
+	
+	
+}
+
+.blur
+{
+	transition: all .5s ease;
+	filter: blur(0px);
+
+}
+
+.promoText_Projects h3
+{
+	opacity: 0;
+	position: absolute;
+	transition: all .5s ease;
+	font-weight: lighter;
+	text-shadow: 0 10px 10px black;
+	z-index: 2;
+}
+
+.articles
+{
+	width: 700px;
+	height: 400px;
+	overflow: hidden;
+	font-size: 24px;
+	line-height: 30px;
+	background: green;
+	padding: 20px 100px;
+	padding-top: 50px;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+	transition: all 1s ease;
+	opacity: 1;
+
+}
+
+
+.deleteArticles
+{
+	height:0px;
+	bottom: 40px;
+	opacity: 0;
+	position: relative;
+}
+
+
+.articles br
+{
+	line-height: 70px;
+}
+
+.blue
+{
+	background: #6fcdff;
+}
+
+.green
+{
+	background: #5cd5b7;
+}
+.filter img
+{
+	filter: brightness(120%) blur(0px);
+	transition: 1s;
+	box-shadow: 0 20px 50px black;
+	position: relative;
+	z-index: 1;
+}
+
+.filter:hover img
+{
+	filter: brightness(70%) blur(2px);
+}
+.blur :hover
+{
+	filter: blur(10px);
+}
+.projects:hover .promoText_Projects h3
+{
+	opacity: 1;
+	position: absolute;
+	margin: 0px;
+}
 
