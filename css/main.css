@@ -391,7 +391,100 @@ h3
 
 /*Contact Page*/
 
+.contactHeader
+{
+	background-image: url(../images/contacts_hero_img.jpg);
+}
 
+#addresInfo
+
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	padding: 80px;
+
+}
+
+#addresInfo h3
+
+{
+	font-size: 35px;
+	color:#343434;
+
+}
+
+#mapArea
+{
+	height: 550px;
+	width: 1022px;
+	border: solid grey 1px;	
+}
+
+.contactUs
+{
+	background-color: #fff;
+}
+
+.contactUs h3
+{
+	color: #343434;
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+}
+
+.firstnames
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.lastnames
+{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.email
+{
+	grid-row-start: 3;
+
+}
+
+.comments
+{
+	grid-row-start: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+
+
+}
+.contactUs input, textarea
+{
+
+	border-bottom-color: #00bcff;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	font-size: 14px;
+	width: 95%;
+	padding: 10px;
+	display: block;
+
+
+
+}
+
+.contactUs
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
 
 
 
