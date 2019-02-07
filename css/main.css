@@ -37,7 +37,7 @@ a:hover
 
 
 
-#siteContainer 
+
 
 h3
 {
@@ -412,8 +412,16 @@ h3
 {
 	font-size: 35px;
 	color:#343434;
+	text-align: center;
 
 }
+
+#addresInfo a
+{
+font-size: 35px;
+	color:#343434;
+}
+
 
 #mapArea
 {
@@ -422,17 +430,37 @@ h3
 	border: solid grey 1px;	
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contactUs
 {
-	background-color: #fff;
+	background-color: #f5f5f5;
+
 }
 
-.contactUs h3
+.contactH3
 {
 	color: #343434;
 	text-align: center;
-	grid-column-start: 1;
-	grid-column-end: 3;
+	background: none;
+	grid-column-start: 2;
+  justify-self: center;
+  font-size:50px;
+
 
 }
 
@@ -444,13 +472,18 @@ h3
 
 .lastnames
 {
-	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	margin-right: 10px;
 }
 
 .email
 {
 	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin-top: 25px;
 
 }
 
@@ -459,32 +492,148 @@ h3
 	grid-row-start: 4;
 	grid-column-start: 1;
 	grid-column-end: 4;
+		margin-top: 25px;
 
 
 }
 .contactUs input, textarea
 {
+	
 
 	border-bottom-color: #00bcff;
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;
 	font-size: 14px;
-	width: 95%;
+	width: 98%;
 	padding: 10px;
+	display: block;
+	margin-top:10px;
+	background: #f5f5f5;
+}
+
+
+.contactForm label
+{
+	font-size: 20px;
+	font-family:"Helvetica Neue";
+	font-weight: bold;
+	color: #343434;
+
+}
+#names
+{
 	display: block;
 
 
-
 }
+
 
 .contactUs
 {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr;
+	grid-template-rows: 0.5fr  0.5fr 0.5fr;
+margin: 20px;
 
 }
+
+
+
+
+
+
+
+
+
+
+.buttonContact {
+ font-family: Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  /*box-shadow: 2px rgba(255, 255, 255, 0.6);*/
+ width: 200px;
+ padding: 20px;
+ text-align: center;
+ justify-self: center;
+	background: none;
+	margin: 40px;
+  /*margin-left: 40px;
+  margin-top: 50px;
+  margin-top: 50px;*/
+  grid-row-start: 5;
+ 
+	grid-column-start: 2;
+
+}
+
+#dwn
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+.buttonContact:active 
+ 
+{
+  transform: translateY(4px);
+}
+
+
+
+
+.buttonContact
+{
+background: -webkit-linear-gradient(bottom left, #23A6D5, #23D5AB);
+background: -o-linear-gradient(bottom left, #23A6D5, #23D5AB);
+background: linear-gradient(to top right, #23A6D5, #23D5AB);
+		background-size: 120% 120%;
+
+{
+	-webkit-animation: Gradient 2s ease infinite;
+	-moz-animation: Gradient 2s ease infinite;
+	animation: Gradient 2s ease infinite;
+	@-webkit-keyframes Gradient   
+	{
+	0% 
+	{
+		background-position: 0% 50%
+	}
+	50% 
+	{
+		background-position: 100% 50%
+	}
+	100% 
+	{
+		background-position: 0% 50%
+	}
+}
+}				
+
+
+     @-moz-keyframes Gradient 
+{
+	0% 
+	{
+		background-position: 0% 50%
+	}
+	50%
+	 {
+		background-position: 100% 50%
+	}
+	100% 
+	{
+		background-position: 0% 50%
+	}
+}
+
+
+
 
 
 
