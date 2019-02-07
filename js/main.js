@@ -31,6 +31,12 @@ projects[3].addEventListener("click", function()
 
 	});
 
+projects[4].addEventListener("click", function()
+	{
+		articles[4].classList.toggle("deleteArticles");
+
+	});
+
 
 	// projects.forEach(show => show.addEventListener("click",showArticles));
 
