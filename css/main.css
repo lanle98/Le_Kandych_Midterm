@@ -10,7 +10,7 @@
 
 body
 {
-background: linear-gradient(45deg, rgba(0,255,191,1) 0%, rgba(160,255,231,1) 100%);
+background: linear-gradient(120deg, rgba(126,255,223,1) 0%, rgba(218,255,135,1) 100%);
 
 }
 
@@ -1127,7 +1127,7 @@ background-image: linear-gradient(-135deg, #9ABD4B 0%, #48E4BD 100%);
 	font-size: 12px;
 }
 
-.events button
+button
 {
 	padding:15px 30px;
 	filter: none;
@@ -1386,7 +1386,7 @@ button:hover
 	right: 3px;
 	transform: rotate(-30deg);
 }
-/*Contact Page*/
+
 
 
 
@@ -1403,8 +1403,22 @@ button:hover
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	
+	margin: 50px 0;
 	padding: 80px;
+
+
+}
+#addresInfo section img
+{
+	width: 150px;
+	padding: 0 40px;
+	transition: .2s;
+
+}
+
+#addresInfo section img:hover
+{
+	width: 180px;
 
 }
 
@@ -1450,7 +1464,7 @@ font-size: 35px;
 
 .contactH3
 {
-	color: #343434;
+	color: #9ABD4B;
 	text-align: center;
 	background: none;
 	grid-column-start: 2;
@@ -1496,7 +1510,7 @@ font-size: 35px;
 {
 	
 
-	border-bottom-color: #00bcff;
+	border-bottom-color: #9ABD4B;
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;
@@ -1546,22 +1560,12 @@ background: none;
 
 
 .buttonContact {
- font-family: Helvetica, Arial, sans-serif;
-  display: block;
-  font-size: 24px;
-  outline: none;
-  border: none;
-  border-radius: 15px;
-  /*box-shadow: 2px rgba(255, 255, 255, 0.6);*/
+ 
+ margin: 40px;
  width: 200px;
  padding: 20px;
  text-align: center;
  justify-self: center;
-	background: none;
-	margin: 40px;
-  /*margin-left: 40px;
-  margin-top: 50px;
-  margin-top: 50px;*/
   grid-row-start: 5;
  
 	grid-column-start: 2;
@@ -1576,60 +1580,37 @@ background: none;
 
 
 
-.buttonContact:active 
+button:active 
  
 {
   transform: translateY(4px);
 }
 
-
-
-
-.buttonContact
+#mapArea
 {
-background: -webkit-linear-gradient(bottom left, #23A6D5, #23D5AB);
-background: -o-linear-gradient(bottom left, #23A6D5, #23D5AB);
-background: linear-gradient(to top right, #23A6D5, #23D5AB);
-		background-size: 120% 120%;
-
-{
-	-webkit-animation: Gradient 2s ease infinite;
-	-moz-animation: Gradient 2s ease infinite;
-	animation: Gradient 2s ease infinite;
-	@-webkit-keyframes Gradient   
-	{
-	0% 
-	{
-		background-position: 0% 50%
-	}
-	50% 
-	{
-		background-position: 100% 50%
-	}
-	100% 
-	{
-		background-position: 0% 50%
-	}
-}
-}				
-
-
-     @-moz-keyframes Gradient 
-{
-	0% 
-	{
-		background-position: 0% 50%
-	}
-	50%
-	 {
-		background-position: 100% 50%
-	}
-	100% 
-	{
-		background-position: 0% 50%
-	}
+	position: relative;
 }
 
+iframe
+{
+	position: absolute;
+}
 
+.filterMap
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(-45deg, rgba(72,228,189,1) 0%, rgba(72,228,133,1) 35%, rgba(75,189,112,1) 63%,rgba(154,189,75,1) 80%, rgba(154,189,75,1) 100%);
+	opacity: .5;
+	transition: .4s;
+	z-index: 1;
+}
+
+#mapArea:hover .filterMap
+{
+	opacity: 0;
+	z-index: -1; 
+}
 
 
