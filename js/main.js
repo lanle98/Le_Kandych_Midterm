@@ -38,6 +38,7 @@ projects[4].addEventListener("click", function()
 	});
 
 
+
 	// projects.forEach(show => show.addEventListener("click",showArticles));
 
 // 	var elmnt = document.getElementsByClassName("articles");
@@ -46,3 +47,9 @@ projects[4].addEventListener("click", function()
 
 
 	})();
+
+
+
+
+
+
