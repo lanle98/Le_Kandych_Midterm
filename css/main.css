@@ -622,8 +622,8 @@ box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.37);
 	background-image: url(../images/footer.jpg);
 	height: 236px;
 	display: grid;
-	grid-template-columns: 0.3fr 0.3fr 1fr 1fr;
-	grid-template-rows: 0.3fr 0.3fr 0.3fr;
+	grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+	grid-template-rows: 0.5fr 0.5fr 0.5fr;
 	box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
 }
 
@@ -940,14 +940,17 @@ background-image: linear-gradient(-45deg, #6BBD4B 0%, #0CAA6B 100%);
 	
 }
 
-
-
 .promoText_Projects h3
+{
+	font-weight: lighter;
+}
+
+.promoText_Projects .h3
 {
 	opacity: 0;
 	position: absolute;
 	transition: all .3s ease;
-	font-weight: lighter;
+	
 	text-shadow: 0 10px 10px black;
 	z-index: 2;
 }
@@ -1018,6 +1021,7 @@ background-image: linear-gradient(-135deg, #6BBD4B 0%, #0CAA6B 100%);
 	transition: .3s;
 	box-shadow: 0px 10px 14px -4px rgba(0,0,0,0.37);
 	z-index: 1;
+	position: /*absolute;*/
 }
 .gradient
 {
@@ -1027,8 +1031,13 @@ background-image: linear-gradient(-135deg, #6BBD4B 0%, #0CAA6B 100%);
 	z-index: 2;
 	opacity: 0;
 	transition: .3s;
+	position: absolute;
 }
-
+/*.projects .arrow
+{
+	position: absolute;
+	z-index: 1;
+}*/
 .projects:hover .gradient
 {
 	opacity: .3;
@@ -1045,7 +1054,7 @@ background-image: linear-gradient(-135deg, #6BBD4B 0%, #0CAA6B 100%);
 }
 
 
-.projects:hover .promoText_Projects h3
+.projects:hover .promoText_Projects .h3
 {
 	opacity: 1;
 	position: absolute;
@@ -1406,7 +1415,12 @@ button:hover
 	transform: rotate(-30deg);
 }
 
-
+.linksColumn
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 
 /*Contact Page*/
