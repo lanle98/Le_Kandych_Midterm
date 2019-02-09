@@ -8,6 +8,27 @@
 }
 
 
+@font-face {
+    font-family: 'cabinbold';
+    src: url('cabin-bold-webfont.woff2') format('woff2'),
+         url('cabin-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cabinregular';
+    src: url('cabin-regular-webfont.woff2') format('woff2'),
+         url('cabin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body
 {
 background: linear-gradient(45deg, rgba(187,255,238,1) 0%, rgba(199,255,177,1) 100%);
@@ -27,8 +48,10 @@ a:hover
 }
 
 
+
 h3
 {
+	font-family: 'cabinbold', sans-serif;
 	font-size: 60px;
 	letter-spacing: 1px;
 }
@@ -254,6 +277,10 @@ svg
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
+
+
+
+
 
 .spin
 {
@@ -1247,7 +1274,7 @@ button:hover
 #newsletters h4
 {
 	
-	font-weight: bold;
+	font-weighthome: bold;
 	font-size:26px;
 	line-height: 1.7;
 	text-align: center;
@@ -1272,10 +1299,11 @@ button:hover
 	margin:0;
 	background: white;
 }
-.memoryLane img
+.memoryLane 
 {
-	width: 80%;
+	width: 70%;
 	padding-bottom: 80px;
+	margin-left: 160px;
 }
 
 .traaLinks
