@@ -2,4 +2,4 @@
 
 ## This is the redesign project for anglers.org
 
-### Lan Le - Created and designed first 3 pages
+### Lan Le - designed first 3 pages, created animations and javascript for the site
