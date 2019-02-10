@@ -2,7 +2,8 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-membership = []
+received = []
+hatched = []
 year = [] # push the year data here
 categories = []
 # open the csv file and parse it
@@ -15,63 +16,70 @@ with open("data/eggs.csv") as csvfile:
              print('pushing text row to city array')
              categories.append(row)
              line_count += 1
-        else:
+        elif  line_count <= 5:
             # collect the medal info
-            membershipData = row[1]
-            membership.append(membershipData)
-            yearData = row[0]
+            receivedData = float(row[2])
+            received.append(receivedData)
+            hatchedData = float(row[3])
+            hatched.append(hatchedData)
+            yearData = float(row[1])
             year.append(yearData)
             line_count += 1
 
         
 
 
-print('processed', line_count - 1, "rows of data")
+print('processed', line_count-1, "rows of data")
 
 
 
-np_membership = np.array(membership)
+np_received = np.array(received)
 np_year = np.array(year)
+np_hatched= np.array(hatched)
 
-print(np_membership)
+print(np_received)
+print(np_hatched)
 print(np_year)
 
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.ticker import MaxNLocator
-from collections import namedtuple
 
 
 n_groups = 5
 
-recieved = (100000, 80000, 70000, 80000, 100000)
-std_recieved = (2000)
-hatched = (70000, 70000, 70000, 70000, 90000)
+bar1 = np.arange(len(np_received))
 
-fig, ax = plt.subplots()
 
 index = np.arange(n_groups)
-bar_width = 0.35
 
-opacity = 1
-error_config = {'ecolor': '0.3'}
+barWidth = 0.25
 
-rects1 = ax.bar(index, recieved, bar_width,
-                alpha=opacity, color='#6BBD4B',
-                yerr=std_recieved, error_kw=error_config,
-                label='Eggs Recieved')
 
-rects2 = ax.bar(index + bar_width, hatched, bar_width,
-                alpha=opacity, color='#48E4BD',
-                error_kw=error_config,
-                label='Eggs Hatched')
+r1 = np.arange(len(bar1))
+r2 = [x + barWidth for x in r1]
 
-ax.set_xlabel('Year')
-ax.set_ylabel('Number Of Eggs')
-ax.set_title('Number Of Eggs Of Brown Trout ')
-ax.set_xticks(index + bar_width / 2)
-ax.set_xticklabels(('2014', '2015', '2016', '2017', '2018'))
-ax.legend()
 
-fig.tight_layout()
+# opacity = 1
+# error_config = {'ecolor': '0.3'}
+
+# rects1 = ax.bar(index, receivedChart, bar_width,
+#                 alpha=opacity, color='#6BBD4B',
+#                 yerr=std_recieved, error_kw=error_config,
+#                 label='Eggs Received', edgecolor='white')
+
+# rects2 = ax.bar(index + bar_width, hatchedChart, bar_width,
+#                 alpha=opacity, color='#48E4BD',
+#                 error_kw=error_config,
+#                 label='Eggs Hatched', edgecolor='white')
+
+plt.bar(r1, received, color='#6BBD4B', width=barWidth, edgecolor='white', label='Eggs Received')
+plt.bar(r2, hatched, color='#48E4BD', width=barWidth, edgecolor='white', label='Eggs Hatched')
+
+# Add xticks on the middle of the group bars
+plt.xlabel('Year', fontweight='bold')
+plt.xticks([r + barWidth for r in range(len(bar1))], ['2014','2015','2016', '2017', '2018'])
+plt.yticks([0, 20000, 40000, 60000, 80000, 100000, 120000])
+plt.ylabel("Number Of Eggs", fontweight='bold')
+plt.title("Brown Trout Eggs", fontweight='bold')
+
+# Create legend & Show graphic
+plt.legend()
 plt.show()

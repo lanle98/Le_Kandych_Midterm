@@ -4,7 +4,7 @@
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256.2437" y1="513.822" x2="256.2437" y2="1.547" gradientTransform="matrix(0.9992 0 0 -0.9992 -0.0391 513.4789)">
 	<stop  offset="0" style="stop-color:#6BBD4B"/>
-	<stop  offset="1" style="stop-color:#48E4BD"/>
+	<stop  offset="1" style="stop-color:#00937E"/>
 </linearGradient>
 <path style="fill:url(#SVGID_1_);" d="M385.22,511.933c-12.434,0-24.949-2.751-36.609-8.414
 	c-49.209-23.902-123.478-68.002-197.837-142.36C76.414,286.798,32.314,212.53,8.414,163.321

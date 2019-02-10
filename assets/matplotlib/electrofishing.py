@@ -2,7 +2,11 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-membership = []
+oxbow = []
+fishoxbow = []
+yearoxbow = []
+dingman = []
+fish = []
 year = [] # push the year data here
 categories = []
 # open the csv file and parse it
@@ -15,13 +19,24 @@ with open("data/electrofishing.csv") as csvfile:
              print('pushing text row to city array')
              categories.append(row)
              line_count += 1
-        else:
+        elif line_count <= 3:
             # collect the medal info
-            membershipData = row[1]
-            membership.append(membershipData)
-            yearData = row[0]
+            fishData = int(row[2])
+            fish.append(fishData)
+            dingmanData = row[0]
+            dingman.append(dingmanData)
+            yearData = int(row[1])
             year.append(yearData)
             line_count += 1
+
+        elif  line_count == 4:
+            fishoxbowData = int(row[2])
+            fishoxbow.append(fishoxbowData)
+            oxbowData = row[0]
+            oxbow.append(oxbowData)
+            yearoxbowData = int(row[1])
+            yearoxbow.append(yearData)
+            # line_count += 1
 
         
 
@@ -30,11 +45,17 @@ print('processed', line_count - 1, "rows of data")
 
 
 
-np_membership = np.array(membership)
+np_fish = np.array(fish)
+np_dingman = np.array(dingman)
 np_year = np.array(year)
+np_oxbow = np.array(oxbow)
+np_fishoxbow = np.array(fishoxbow)
 
-print(np_membership)
+print(np_fish)
 print(np_year)
+print(np_dingman)
+print(np_oxbow)
+print(np_fishoxbow)
 
 
 
@@ -45,9 +66,9 @@ import matplotlib.pyplot as plt
 barWidth = 0.25
  
 # set height of bar
-bars1 = [15, 10, 13]
-bars2 = [14, 18, 15]
-bars3 = [23, 12, 14]
+bars1 = [15, 14, 23]
+bars2 = [10, 18, 12]
+bars3 = [13, 15, 14]
  
 # Set position of bar on X axis
 r1 = np.arange(len(bars1))
@@ -62,8 +83,8 @@ plt.bar(r3, bars3, color='#2d7f5e', width=barWidth, edgecolor='white', label='Di
 # Add xticks on the middle of the group bars
 plt.xlabel('Year', fontweight='bold')
 plt.xticks([r + barWidth for r in range(len(bars1))], ['2016', '2017', '2018'])
-plt.ylabel("Number Of Fishes")
-plt.title("Electro Fishing")
+plt.ylabel("Number Of Fishes", fontweight='bold')
+plt.title("Electro Fishing", fontweight='bold')
 
 # Create legend & Show graphic
 plt.legend()
