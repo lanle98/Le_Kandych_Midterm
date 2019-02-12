@@ -1,4 +1,4 @@
-@charset "UTF-8";
+р@charset "UTF-8";
 
 /*CSS Document*/
 
@@ -1160,6 +1160,7 @@ background-image: linear-gradient(-135deg, #6BBD4B 0%, #0CAA6B 100%);
 
 #eventsPara1
 {
+	height: 400px;
 	padding: 50px 20px;
 	text-align: center;
 }
@@ -1324,8 +1325,9 @@ button:hover
 
 .traaLinks
 {
-
+	
 }
+
 
 .TRAALinks
 {
